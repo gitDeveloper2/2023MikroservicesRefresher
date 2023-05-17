@@ -12,6 +12,7 @@
   <modules>
     <module>eurekaserver</module>
     <module>eurekaclient</module>
+    <module>configServer</module>
   </modules>
 
   <properties>
