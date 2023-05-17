@@ -1,0 +1,27 @@
+resilience4j.retry:
+  instances:
+    mycircuitbreaker:
+      maxRetryAttempts: 1
+      waitDuration: 2s
+#    myProjectAllRemoteCallsCB:
+#      registerHealthIndicator: true
+#      slidingWindowSize: 2
+#      slidingWindowType: COUNT_BASED
+#      permittedNumberOfCallsInHalfOpenState: 4
+#      minimumNumberOfCalls: 2
+#      waitDurationInOpenState: 5s
+#      slowCallRateThreshold: 5
+#      slowCallDurationThreshold: 1
+#      failureRateThreshold: 50
+#management:
+#  health:
+#    circuitbreakers:
+#      enabled: true
+#  security:
+#    enabled: false
+#  port: 9000
+management:
+  endpoints:
+    web:
+      exposure:
+        include=*:

@@ -13,6 +13,8 @@
     <module>eurekaserver</module>
     <module>eurekaclient</module>
     <module>configServer</module>
+      <module>circuitbreaker</module>
+      <module>RestExample</module>
   </modules>
 
   <properties>
